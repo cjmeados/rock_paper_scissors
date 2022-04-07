@@ -5,15 +5,19 @@
     <meta charset="utf-8">
 </head>
 <body>
-    <script>
-        
-        let possibleOutcomes = ['rock', 'paper', 'scissors']
-        function computerPlay() {
-            let randomAnswer = Math.floor(Math.random()*possibleOutcomes.length);
-            return possibleOutcomes[randomAnswer].toUpperCase();
-        }
 
-    </script>
+    <button id='rockbtn'>Rock</button>
+    <button id='paperbtn'>Paper</button>
+    <button id='scissorsbtn'>Scissors</button>
+
+    <div id='results'>Choose Rock, Paper, or Scissors</div>
+    <div id='win'>Win</div>
+        <div id='winTally'>0</div>
+    <div id='lose'>Lose</div>
+        <div id='loseTally'>0</div>
+        <div id='finalResult'>The overall winner will be displayed here!</div>
+    <script src="app.js"></script>
+       
 </body>
 </html>
 
